@@ -1,0 +1,6 @@
+<% form_tag do %>
+	<%= label_tag :search_name_like_any, 'Keywords' %>
+	<%= text_field_tag 'search[name_like_any]', join_keywords(@search.name_like_any) %>
+	<%= submit_tag 'Search' %>
+<% end %>
+<%= link_to 'Advance Search', url_for(:controller=>'products', :action=>'search') %>
