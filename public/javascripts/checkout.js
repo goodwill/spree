@@ -68,24 +68,14 @@ var get_states = function() {
 
 // replace the :only child of the parent with the given html, and transfer
 //   {name,id} attributes over, returning the new child
-var chg_state_input_element = function (parent, html) {
-  var child = parent.find(':only-child');
-  var name = child.attr('name');
-  var id = child.attr('id');
-  //Toggle back and forth between id and name
-  if(html.attr('type') == 'text' && child.attr('type') != 'text') {
-    name = name.replace('_id', '_name');
-    id = id.replace('_id', '_name');
-  } else if(html.attr('type') != 'text' && child.attr('type') == 'text') {
-    name = name.replace('_name', '_id');
-    id = id.replace('_name', '_id');
-  }
-  html.addClass('required')
-      .attr('name', name)
-      .attr('id',   id);
-  child.remove();		// better as parent-relative?
-  parent.append(html);
-  return html;
+var chg_state_input_element = function (parent, replaceWith) {
+	var original_ctl=$('input, select', parent);
+	replaceWith
+		.attr('id', original_ctl.attr('id'))
+		.attr('name', original_ctl.attr('name'));
+	
+  	parent.html(replaceWith);
+  	return replaceWith;
 };
 
 // TODO: better as sibling dummy state ?
@@ -95,32 +85,32 @@ var update_state = function(region) {
   var states         = state_mapper[country];
   var hidden_element = $('input#hidden_' + region + 'state');
 
-  var replacement;
+  var select_ctl;
   if(states) {
     // recreate state selection list
-    replacement = $(document.createElement('select'));
+    select_ctl = $("<select />");
     var states_with_blank = [["",""]].concat(states);
     $.each(states_with_blank, function(pos,id_nm) {
-      var opt = $(document.createElement('option'))
+      var opt = $("<option />")
                 .attr('value', id_nm[0])
                 .html(id_nm[1]);
-      replacement.append(opt);
+      select_ctl.append(opt);
       if (id_nm[0] == hidden_element.val()) { opt.attr('selected', 'true') }
         // set this directly IFF the old value is still valid
     });
   } else {
     // recreate an input box
-    replacement = $(document.createElement('input'));
-    if (! hidden_element.val().match(/^\d+$/)) { replacement.val(hidden_element.val()) }
+    select_ctl = $('<input />');
+    if (! hidden_element.val().match(/^\d+$/)) { select_ctl.val(hidden_element.val()) }
   }
 
-  chg_state_input_element($('span#' + region + 'state'), replacement);
-  hidden_element.val(replacement.val());
+  chg_state_input_element($('span#' + region + 'state'), select_ctl);
+  hidden_element.val(select_ctl.val());
 
   // callback to update val when form object is changed
   // This is only needed if we want to preserve state when someone refreshes the checkout page
   // Or... if someone changes between countries with no given states
-  replacement.change(function() {
+  select_ctl.change(function() {
     $('input#hidden_' + region + 'state').val($(this).val());
   });
 };       

@@ -12,6 +12,18 @@ module TaxonsHelper
     crumb_list = content_tag(:ul, crumbs)
     content_tag(:div, crumb_list + content_tag(:br, nil, :class => 'clear'), :class => 'breadcrumbs')
   end
+  
+  def full_taxon_path(taxon, separator="&nbsp;&raquo;&nbsp;")
+    result=""
+    current=taxon
+    while !current.nil?
+      result = separator + current.name + result
+      current=current.parent
+    end
+    
+    result.gsub!(Regexp.new("^#{separator}"),"")
+  end
+  
 
   
   # Retrieves the collection of products to display when "previewing" a taxon.  This is abstracted into a helper so 

@@ -81,6 +81,7 @@ module Spree
     # a billing address when authorizing/voiding a previously captured transaction.  So omits these 
     # options in this case since they aren't necessary.  
     def minimal_gateway_options
+      puts checkout
       {:email => checkout.email, 
        :customer => checkout.email, 
        :ip => checkout.ip_address, 

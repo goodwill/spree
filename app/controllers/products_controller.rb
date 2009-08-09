@@ -2,7 +2,7 @@ class ProductsController < Spree::BaseController
   before_filter(:setup_admin_user) unless RAILS_ENV == "test"
 
   resource_controller
-  helper :taxons  
+  helper :taxons,:search_form
   before_filter :load_data, :only => :show
   actions :show, :index
 
@@ -40,9 +40,9 @@ class ProductsController < Spree::BaseController
       taxon_and_descendants = [@taxon] + @taxon.descendents
       base_scope = base_scope.taxons_id_equals_any(taxon_and_descendants.map &:id)
     end
-                
-    @search = base_scope.search(params[:search])
-
+    
+    @search = base_scope.search(nurse_search_set(params[:search]))
+    
     # set on model basis (default 30)
     # Product.per_page ||= Spree::Config[:products_per_page]
 
@@ -52,5 +52,16 @@ class ProductsController < Spree::BaseController
     @products ||= @search.paginate(:include  => [:images, {:variants => :images}],
                                    :per_page => Spree::Config[:products_per_page],
                                    :page     => params[:page])
+  end
+  
+  def nurse_search_set(search_params)
+    unless search_params.nil?
+      result=search_params.clone
+      search_params.each do |k,v|
+        result[k]=v.split(" ") if k =~ /_any$/
+      end
+    
+      result
+    end
   end
 end

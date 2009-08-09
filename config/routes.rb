@@ -38,7 +38,7 @@ ActionController::Routing::Routes.draw do |map|
   map.resources :countries, :has_many => :states, :only => :index
   map.resources :states, :only => :index
   map.resources :users
-  map.resources :products, :member => {:change_image => :post}
+  map.resources :products, :member => {:change_image => :post}, :collection=>{:search=>:get}
   map.resources :addresses
   map.resources :orders, :member => {:address_info => :get}, :has_many => [:line_items, :creditcards, :creditcard_payments], :has_one => :checkout
   map.resources :orders, :member => {:fatal_shipping => :get} do |order|
@@ -63,7 +63,7 @@ ActionController::Routing::Routes.draw do |map|
     admin.resources :tax_categories
     admin.resources :configurations
     admin.resources :products, :has_many => [:product_properties, :images] do |product|
-			product.resources :variants 
+			product.resources :variants, :has_many=>[:images]
       product.resources :option_types, :member => {:select => :get, :remove => :get}, :collection => {:available => :get, :selected => :get}
       product.resources :taxons, :member => {:select => :post, :remove => :post}, :collection => {:available => :post, :selected => :get}
     end

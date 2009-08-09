@@ -7,4 +7,5 @@ module SearchHelper
     end
     options
   end
+
 end

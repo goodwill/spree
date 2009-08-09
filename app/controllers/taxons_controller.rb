@@ -2,12 +2,11 @@ class TaxonsController < Spree::BaseController
   resource_controller
   before_filter :load_data, :only => :show
   actions :show
-  helper :products
+  helper :products, :search_form
   
   private
   def load_data
     @search = object.products.active.search(params[:search])
-
     ## push into model?
     ## @search.per_page ||= Spree::Config[:products_per_page]
     
@@ -15,6 +14,7 @@ class TaxonsController < Spree::BaseController
                                    :per_page => Spree::Config[:products_per_page],
                                    :page     => params[:page])
     ## defunct?
+    
     @product_cols = 3
   end
   

@@ -1,5 +1,6 @@
 <% content_for :sidebar do %>
 	<%= render :partial => "shared/taxonomies" %>
+	<%= render :partial => "shared/search_product" %>
 <% end %>
 
 <%= render :partial => "shared/products.html.erb", :locals => {:products => @products, :taxon => @taxon } %>
