@@ -70,9 +70,26 @@ var get_states = function() {
 //   {name,id} attributes over, returning the new child
 var chg_state_input_element = function (parent, replaceWith) {
 	var original_ctl=$('input, select', parent);
+	var original_id=original_ctl.attr('id');
+	var original_name=original_ctl.attr('name');
+	
+	if (original_ctl.get(0).tagName!=replaceWith.get(0).tagName)
+	{
+		var from_name="_id";
+		var to_name="_name";
+		if (replaceWith.get(0).tagName=='select')
+		{
+			from_name="_name";
+			to_name="_id";
+		}
+		
+		original_id=original_id.replace(from_name, to_name);
+		original_name=original_name.replace(from_name, to_name);
+	}
+		
 	replaceWith
-		.attr('id', original_ctl.attr('id'))
-		.attr('name', original_ctl.attr('name'));
+		.attr('id', original_id)
+		.attr('name', original_name);
 	
   	parent.html(replaceWith);
   	return replaceWith;

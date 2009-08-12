@@ -38,9 +38,11 @@ class CheckoutsController < Spree::BaseController
                         :available_methods => rate_hash}.to_json,
              :layout => false
     end
+
   end
   
   update.before do
+   
     if params[:checkout] and params[:checkout][:bill_address_attributes]
       # prevent double creation of addresses if user is jumping back to address stup without refreshing page
       params[:checkout][:bill_address_attributes][:id] = @checkout.bill_address.id if @checkout.bill_address
