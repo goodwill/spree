@@ -1,6 +1,8 @@
 <% f.fields_for :address do |address_form| %>
   <div class="yui-g">
+	<p>
     <label><%= t(:full_name) %></label>
+	</p>
     <div class="yui-u sub-field first">
       <%= address_form.text_field :firstname, :class => 'fullwidth' %>
       <br/>
