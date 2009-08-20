@@ -196,6 +196,7 @@ en-GB:
   backordering_is_allowed: "Backordering {{not}} allowed"
   bill_address: "Bill Address"
   billing_address: "Billing Address"
+  calculator: Calculator
   calculator_settings_warning: "If you are changing the calculator type, you must save first before you can edit the calculator settings"
   cancel: cancel
   canceled: Canceled
@@ -229,13 +230,12 @@ en-GB:
   country: Country
   country_based: "Country Based"
   coupon: Coupon                                                                             
-  coupon_calculator: Coupon Calculator
   coupons: Coupons
   coupons_description: Manage coupons
   create: Create
   create_a_new_account: "Create a new account"
   create_user_account: Create User Account
-  created_successfully:
+  created_successfully: "Created Successfully"
   credit_card: "Credit Card"
   credit_card_capture_complete: "Credit Card Was Captured"
   credit_card_payment: "Credit Card Payment"
@@ -259,11 +259,12 @@ en-GB:
   editing_prototype: "Editing Prototype"
   editing_shipping_category: "Editing Shipping Category"
   editing_shipping_method: "Editing Shipping Method"
+  editing_shipping_rate: Editing Shipping Rate 
   editing_state: "Editing State"
   editing_tax_category: "Editing Tax Category"
   editing_tax_rate: "Editing Tax Rate"
   editing_user: "Editing User"
-  editing_zone:
+  editing_zone: "Editing Zone"
   email: Email
   email_address: "Email Address"
   email_server_settings_description: "Set email server settings."
@@ -283,7 +284,11 @@ en-GB:
   first_name: "First Name"
   flat_percent: Flat Percent
   flat_rate_amount: Amount
+  flat_rate_per_item: "Flat Rate (per item)"
+  flat_rate_per_order: "Flat Rate (per order)"
+  flexible_rate: "Flexible Rate"
   forgot_password: "Forgot Password"
+  full_name: "Full Name"
   gateway: Gateway
   gateway_configuration: "Gateway configuration"
   gateway_error: "Gateway Error"
@@ -307,7 +312,7 @@ en-GB:
   images: Images
   images_for: "Images for"
   in_progress: "In Progress"
-  invalid_search:
+  invalid_search: "Invalid search criteria."
   inventory: Inventory
   inventory_adjustment: "Inventory Adjustment"
   inventory_setting_description: "Inventory Configuration, Backordering, Zero-Stock Display"
@@ -335,8 +340,8 @@ en-GB:
   login_name: Login
   logout: Logout
   maestro_or_solo_cards: Maestro/Solo cards
-  mail_delivery_enabled:
-  mail_delivery_not_enabled:
+  mail_delivery_enabled: "Mail delivery is enabled"
+  mail_delivery_not_enabled: "Mail delivery is not enabled"
   mail_server_preferences: Mail Server Preferences
   mail_server_settings: "Mail Server Settings"
   mark_shipped: "Mark Shipped"
@@ -359,9 +364,10 @@ en-GB:
   new_product: "New Product"
   new_property: "New Property"
   new_prototype: "New Prototype"
-  new_shipment:
+  new_shipment: "New Shipment"
   new_shipping_category: "New Shipping Category"
   new_shipping_method: "New Shipping Method"
+  new_shipping_rate: New Shipping Rate
   new_state: "New State"
   new_tax_category: "New Tax Category"
   new_tax_rate: "New Tax Rate"
@@ -452,6 +458,7 @@ en-GB:
   return: return
   returned: Returned
   roles: Roles
+  sales_tax: "Sales Tax"
   sales_total: "Sales Total"
   sales_total_for_all_orders: "Sales total for all orders"
   sales_totals: "Sales Totals"
@@ -475,15 +482,17 @@ en-GB:
   shipped: Shipped
   shipping: Delivery
   shipping_address: "Delivery Address"
-  shipping_calculator: Calculator
   shipping_categories: "Shipping Categories"
   shipping_categories_description: "Manage shipping categories to identify which products can be shipped via which method"
+  shipping_category: Shipping Category
   shipping_cost: Cost
   shipping_error: "Delivery Error"
   shipping_instructions: "Delivery Instructions"
   shipping_method: "Delivery Method"
   shipping_methods: "Delivery Methods"
   shipping_methods_description: "Manage shipping methods"
+  shipping_rates: "Shipping Rates"
+  shipping_rates_description: "Manage shipping rates"
   shipping_total: "Delivery Total"
   shop_by_taxonomy: "Shop by {{taxonomy}}"
   shopping_cart: "Shopping Basket"
@@ -562,7 +571,7 @@ en-GB:
   unrecognized_card_type: Unrecognized card type
   update: Update
   update_password: "Update my password and log me in"                    
-  updated_successfully:
+  updated_successfully: "Updated Successfully"
   updating: Updating
   usage_limit: Usage Limit
   use_as_shipping_address: Use as Delivery Address
@@ -574,6 +583,7 @@ en-GB:
   users: Users
   value: Value
   variants: Variants
+  vat: "VAT"           
   version: Version
   website: Website
   weight: Weight

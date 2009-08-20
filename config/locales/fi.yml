@@ -196,6 +196,7 @@ fi:
   backordering_is_allowed: "Jälkitoimittaminen {{not}} sallittu"
   bill_address: "Laskun osoite"
   billing_address: Laskutusosoite
+  calculator: Calculator
   calculator_settings_warning: "Mikäli vaihdat laskimen tyyppiä, sinun täytyy ensin tallentaa ennen kuin voit muuttaa laskimen asetuksia"
   cancel: peruuta
   canceled: Peruutettu
@@ -229,7 +230,6 @@ fi:
   country: Maa
   country_based: Sijaintimaa
   coupon: Coupon                                                                             
-  coupon_calculator: Coupon Calculator
   coupons: Coupons
   coupons_description: Manage coupons
   create: Luo
@@ -259,6 +259,7 @@ fi:
   editing_prototype: "Muokataan prototyyppiä"
   editing_shipping_category: "Muokataan toimituskategoriaa"
   editing_shipping_method: "Muokataan toimitustapaa"
+  editing_shipping_rate: Editing Shipping Rate 
   editing_state: "Muokataan osavaltiota"
   editing_tax_category: "Muokataan verotuskategoriaa"
   editing_tax_rate: "Muokataan veroprosenttia"
@@ -283,7 +284,11 @@ fi:
   first_name: Etunimi
   flat_percent: Flat Percent
   flat_rate_amount: Määrä
+  flat_rate_per_item: "Flat Rate (per item)"
+  flat_rate_per_order: "Flat Rate (per order)"
+  flexible_rate: "Flexible Rate"
   forgot_password: "Salasanan unohtaminen"
+  full_name: "Full Name"
   gateway: Yhdyskäytävä
   gateway_configuration: "Yhdyskäytävän konfigurointi"
   gateway_error: "Virhe yhdyskäytävässä"
@@ -362,6 +367,7 @@ fi:
   new_shipment: "Uusi toimitus"
   new_shipping_category: "Uusi toimituskategoria"
   new_shipping_method: "Uusi toimitustapa"
+  new_shipping_rate: New Shipping Rate
   new_state: "Uusi osavaltio"
   new_tax_category: "Uusi verotuskategoria"
   new_tax_rate: "Uusi veroprosentti"
@@ -452,6 +458,7 @@ fi:
   return: palaa
   returned: Palattu
   roles: Roolit
+  sales_tax: "Sales Tax"
   sales_total: "Liikevaihto"
   sales_total_for_all_orders: "Liikevaihto kaikilta tilauksilta"
   sales_totals: "Liikevaihdot"
@@ -475,15 +482,17 @@ fi:
   shipped: Toimitettu
   shipping: Toimitus
   shipping_address: Toimitusosoite
-  shipping_calculator: Laskin
   shipping_categories: Toimituskategoriat
   shipping_categories_description: "Hallinnoi toimituskategorioita tunnistaaksesi mitä tuotteita voidaan toimittaa millä tavoilla"
+  shipping_category: Shipping Category
   shipping_cost: Toimituskulut
   shipping_error: Toimitusvirhe
   shipping_instructions: Toimitusohjeet
   shipping_method: Toimitustapa
   shipping_methods: Toimitustavat
   shipping_methods_description: "Hallinnoi toimitustapoja"
+  shipping_rates: "Shipping Rates"
+  shipping_rates_description: "Manage shipping rates"
   shipping_total: "Toimitus yhteensä"
   shop_by_taxonomy: "Shop by {{taxonomy}}"
   shopping_cart: Ostoskori
@@ -574,6 +583,7 @@ fi:
   users: Käyttäjät
   value: Arvo
   variants: Variantit
+  vat: "VAT"           
   version: Versio
   website: Websivu
   weight: Paino

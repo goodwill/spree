@@ -196,6 +196,7 @@ en-US:
   backordering_is_allowed: "Backordering {{not}} allowed"
   bill_address: "Bill Address"
   billing_address: "Billing Address"
+  calculator: Calculator
   calculator_settings_warning: "If you are changing the calculator type, you must save first before you can edit the calculator settings"
   cancel: cancel
   canceled: Canceled
@@ -229,7 +230,6 @@ en-US:
   country: Country
   country_based: "Country Based"
   coupon: Coupon                                                                             
-  coupon_calculator: Coupon Calculator
   coupons: Coupons
   coupons_description: Manage coupons
   create: Create
@@ -259,6 +259,7 @@ en-US:
   editing_prototype: "Editing Prototype"
   editing_shipping_category: "Editing Shipping Category"
   editing_shipping_method: "Editing Shipping Method"
+  editing_shipping_rate: Editing Shipping Rate 
   editing_state: "Editing State"
   editing_tax_category: "Editing Tax Category"
   editing_tax_rate: "Editing Tax Rate"
@@ -282,9 +283,13 @@ en-US:
   final_confirmation: "Final Confirmation"
   full_name: "Full Name"
   first_name: "First Name"                 
-  flat_percent: Flat Percent
+  flat_percent: "Flat Percent"                  
   flat_rate_amount: Amount
+  flat_rate_per_item: "Flat Rate (per item)"
+  flat_rate_per_order: "Flat Rate (per order)"
+  flexible_rate: "Flexible Rate"
   forgot_password: "Forgot Password"
+  full_name: "Full Name"
   gateway: Gateway
   gateway_configuration: "Gateway configuration"
   gateway_error: "Gateway Error"
@@ -363,6 +368,7 @@ en-US:
   new_shipment: "New Shipment"
   new_shipping_category: "New Shipping Category"
   new_shipping_method: "New Shipping Method"
+  new_shipping_rate: New Shipping Rate
   new_state: "New State"
   new_tax_category: "New Tax Category"
   new_tax_rate: "New Tax Rate"
@@ -453,6 +459,7 @@ en-US:
   return: return
   returned: Returned
   roles: Roles
+  sales_tax: "Sales Tax"
   sales_total: "Sales Total"
   sales_total_for_all_orders: "Sales total for all orders"
   sales_totals: "Sales Totals"
@@ -476,15 +483,17 @@ en-US:
   shipped: Shipped
   shipping: Shipping
   shipping_address: "Shipping Address"
-  shipping_calculator: Calculator
   shipping_categories: "Shipping Categories"
   shipping_categories_description: "Manage shipping categories to identify which products can be shipped via which method"
+  shipping_category: Shipping Category
   shipping_cost: Cost
   shipping_error: "Shipping Error"
   shipping_instructions: "Shipping Instructions"
   shipping_method: "Shipping Method"
   shipping_methods: "Shipping Methods"
   shipping_methods_description: "Manage shipping methods"
+  shipping_rates: "Shipping Rates"
+  shipping_rates_description: "Manage shipping rates"
   shipping_total: "Shipping Total"
   shop_by_taxonomy: "Shop by {{taxonomy}}"
   shopping_cart: "Shopping Cart"
@@ -575,6 +584,7 @@ en-US:
   users: Users
   value: Value
   variants: Variants
+  vat: "VAT"           
   version: Version
   website: Website
   weight: Weight
@@ -591,4 +601,4 @@ en-US:
   zone: Zone
   zone_based: "Zone Based"
   zone_setting_description: "Collections of countries, states or other zones to be used in various calculations."
-  zones: Zones              
+  zones: Zones
