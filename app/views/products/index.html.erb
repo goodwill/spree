@@ -1,8 +1,17 @@
 <% content_for :sidebar do %>
-	<%= render :partial => "shared/taxonomies" %>
-	<%= render :partial => "shared/search_product" %>
+
+
+  <% if "products" == @current_controller && @taxon %>
+    <%= render :partial => "shared/filters" %>
+  <% else %>
+    <%= render :partial => "shared/taxonomies" %>
+  <% end %>
+
+  <%= render :partial => "shared/search_product" %>
+
 <% end %>
 
 <%= render :partial => "shared/products.html.erb", :locals => {:products => @products, :taxon => @taxon } %>
 
 <%= will_paginate(:prev => "&#171; #{t('previous')}", :next => "#{t('next')} &#187;") %>
+

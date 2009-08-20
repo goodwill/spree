@@ -196,6 +196,7 @@ nl-NL:
   backordering_is_allowed: "Backordering {{not}} allowed"
   bill_address: "Factuuradres"
   billing_address: "Factuuradres"
+  calculator: Calculator
   calculator_settings_warning: "If you are changing the calculator type, you must save first before you can edit the calculator settings"
   cancel: annuleer
   canceled: Geannuleerd
@@ -229,7 +230,6 @@ nl-NL:
   country: Land
   country_based: "Gebaseerd op land"
   coupon: Coupon                                                                             
-  coupon_calculator: Coupon Calculator
   coupons: Coupons
   coupons_description: Manage coupons
   create: Aanmaken
@@ -259,6 +259,7 @@ nl-NL:
   editing_prototype: "Prototype Wijzigen"
   editing_shipping_category: "Wijzigen verzend-categorie"
   editing_shipping_method: "Wijzigen verzendwijze"
+  editing_shipping_rate: Editing Shipping Rate 
   editing_state: "Wijzigen Status"
   editing_tax_category: "Wijzigen BTW categorie"
   editing_tax_rate: "Editing Tax Rate"
@@ -283,7 +284,11 @@ nl-NL:
   first_name: "Voornaam"
   flat_percent: Flat Percent
   flat_rate_amount: Amount
+  flat_rate_per_item: "Flat Rate (per item)"
+  flat_rate_per_order: "Flat Rate (per order)"
+  flexible_rate: "Flexible Rate"
   forgot_password: "Forgot Password"
+  full_name: "Full Name"
   gateway: Gateway
   gateway_configuration: "Gateway configuration"
   gateway_error: "Gateway Fout"
@@ -362,6 +367,7 @@ nl-NL:
   new_shipment: "Nieuwe Verzending"
   new_shipping_category: "Nieuwe verzend-categorie"
   new_shipping_method: "Nieuwe verzendwijze"
+  new_shipping_rate: New Shipping Rate
   new_state: "Nieuwe Status"
   new_tax_category: "Nieuwe BTW Categorie"
   new_tax_rate: "Nieuw BTW Tarief"
@@ -452,6 +458,7 @@ nl-NL:
   return: Terugzenden
   returned: Teruggezonden
   roles: Rollen
+  sales_tax: "Sales Tax"
   sales_total: "Omzet"
   sales_total_for_all_orders: "Omzet voor alle bestellingen"
   sales_totals: "Omzet"
@@ -475,15 +482,17 @@ nl-NL:
   shipped: Verzonden
   shipping: Aflevering
   shipping_address: "Afleveringsadres"
-  shipping_calculator: Calculator
   shipping_categories: "Verzend-categorieën"
   shipping_categories_description: "Beheer verzend-categorieën om duidelijk te maken op welke wijze producten verzonden kunnen worden"
+  shipping_category: Shipping Category
   shipping_cost: Kosten
   shipping_error: "Fout bij aflevering"
   shipping_instructions: "Shipping Instructions"
   shipping_method: "Verzendwijze"
   shipping_methods: "Verzendwijzen"
   shipping_methods_description: "Beheer verzendwijzen"
+  shipping_rates: "Shipping Rates"
+  shipping_rates_description: "Manage shipping rates"
   shipping_total: "Verzending"
   shop_by_taxonomy: "Winkelen op {{taxonomy}}"
   shopping_cart: "Winkelwagen"
@@ -574,6 +583,7 @@ nl-NL:
   users: Gebruikers
   value: Waarde
   variants: Varianten
+  vat: "VAT"           
   version: Versie
   website: Website
   weight: Gewicht
