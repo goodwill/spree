@@ -1,15 +1,9 @@
 class TaxRate < ActiveRecord::Base
   belongs_to :zone
   belongs_to :tax_category
-  
-  validates_presence_of :amount
   validates_numericality_of :amount
-  
-  has_calculator
+  validates_presence_of :amount
   named_scope :by_zone, lambda { |zone| { :conditions => ["zone_id = ?", zone] } }
-
-  def calculate_tax(order)
-    calculator.compute(order)
-  end
-
+  
+  enumerable_constant :tax_type, :constants => [:sales_tax, :vat]
 end

@@ -196,7 +196,6 @@ nb-NO:
   backordering_is_allowed: "Backordering {{not}} allowed"
   bill_address: "Fakturaadresse"
   billing_address: "Fakturaadresse"
-  calculator: Calculator
   calculator_settings_warning: "If you are changing the calculator type, you must save first before you can edit the calculator settings"
   cancel: Avbryt
   canceled: Avbrutt
@@ -230,6 +229,7 @@ nb-NO:
   country: Land
   country_based: "Land"
   coupon: Coupon                                                                             
+  coupon_calculator: Coupon Calculator
   coupons: Coupons
   coupons_description: Manage coupons
   create: Opprett
@@ -259,7 +259,6 @@ nb-NO:
   editing_prototype: "Endre prototype"
   editing_shipping_category: Endre fraktkategori
   editing_shipping_method: "Endre leveransemåte"
-  editing_shipping_rate: Editing Shipping Rate 
   editing_state: "Endre stat"
   editing_tax_category: "Endre momskategori"
   editing_tax_rate: "Editing Tax Rate"
@@ -284,11 +283,7 @@ nb-NO:
   first_name: "Fornavn"
   flat_percent: Flat Percent
   flat_rate_amount: Amount
-  flat_rate_per_item: "Flat Rate (per item)"
-  flat_rate_per_order: "Flat Rate (per order)"
-  flexible_rate: "Flexible Rate"
   forgot_password: "Forgot Password"
-  full_name: "Full Name"
   gateway: "Tjeneste"
   gateway_configuration: "Gateway configuration"
   gateway_error: "Feil oppstått i tjeneste"
@@ -367,7 +362,6 @@ nb-NO:
   new_shipment: "Ny leveranse"
   new_shipping_category: "Ny fraktkategori"
   new_shipping_method: "Ny leveransemåte"
-  new_shipping_rate: New Shipping Rate
   new_state: "Ny stat"
   new_tax_category: "Ny momskategori"
   new_tax_rate: "Nytt momsnivå"
@@ -458,7 +452,6 @@ nb-NO:
   return: returner
   returned: Returnert
   roles: Roller
-  sales_tax: "Sales Tax"
   sales_total: "Brutto omsetning"
   sales_total_for_all_orders: "Totale salg for alle ordrer"
   sales_totals: "Omsetning"
@@ -482,17 +475,15 @@ nb-NO:
   shipped: Sendt
   shipping: Frakt
   shipping_address: "Leveringsadresse"
+  shipping_calculator: Kalkulator
   shipping_categories: "Fraktkategorier"
   shipping_categories_description: "Konfigurer fraktkategorier for å styre hvilke produkter som kan bruke de ulike leveransemåtene."
-  shipping_category: Shipping Category
   shipping_cost: Kostnad
   shipping_error: "Feil i forbindelse med leveranse"
   shipping_instructions: "Shipping Instructions"
   shipping_method: Leveransemåte
   shipping_methods: "Leveransemåter"
   shipping_methods_description: "Konfigurer leveransemåter."
-  shipping_rates: "Shipping Rates"
-  shipping_rates_description: "Manage shipping rates"
   shipping_total: "Fraktkostnader"
   shop_by_taxonomy: "Shop by {{taxonomy}}"
   shopping_cart: "Handlekurv"
@@ -583,7 +574,6 @@ nb-NO:
   users: Brukere
   value: Verdi
   variants: Varianter
-  vat: "VAT"           
   version: Versjon
   website: Nettsted
   weight: Vekt

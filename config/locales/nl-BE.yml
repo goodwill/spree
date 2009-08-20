@@ -196,7 +196,6 @@ nl-BE:
   backordering_is_allowed: "Backordering {{not}} allowed"
   bill_address: "Factuuradres"
   billing_address: "Factuuradres"
-  calculator: Calculator
   calculator_settings_warning: "If you are changing the calculator type, you must save first before you can edit the calculator settings"
   cancel: annuleer
   canceled: Geannuleerd
@@ -230,6 +229,7 @@ nl-BE:
   country: Land
   country_based: "Gebaseerd op land"
   coupon: Coupon                                                                             
+  coupon_calculator: Coupon Calculator
   coupons: Coupons
   coupons_description: Manage coupons
   create: Aanmaken
@@ -259,7 +259,6 @@ nl-BE:
   editing_prototype: "Prototype Wijzigen"
   editing_shipping_category: "Editing Shipping Category"
   editing_shipping_method: "Editing Shipping Method"
-  editing_shipping_rate: Editing Shipping Rate 
   editing_state: "Wijzigen Status"
   editing_tax_category: "Wijzigen BTW categorie"
   editing_tax_rate: "Editing Tax Rate"
@@ -284,11 +283,7 @@ nl-BE:
   first_name: "Voornaam"
   flat_percent: Flat Percent
   flat_rate_amount: Amount
-  flat_rate_per_item: "Flat Rate (per item)"
-  flat_rate_per_order: "Flat Rate (per order)"
-  flexible_rate: "Flexible Rate"
   forgot_password: "Forgot Password"
-  full_name: "Full Name"
   gateway: Gateway
   gateway_configuration: "Gateway configuration"
   gateway_error: "Gateway Fout"
@@ -367,7 +362,6 @@ nl-BE:
   new_shipment: "Nieuwe Verzending"
   new_shipping_category: "New Shipping Category"
   new_shipping_method: "New Shipping Method"
-  new_shipping_rate: New Shipping Rate
   new_state: "Nieuwe Status"
   new_tax_category: "Nieuwe BTW Categorie"
   new_tax_rate: "Nieuw BTW Tarief"
@@ -458,7 +452,6 @@ nl-BE:
   return: Terugzenden
   returned: Teruggezonden
   roles: Rollen
-  sales_tax: "Sales Tax"
   sales_total: "Omzet"
   sales_total_for_all_orders: "Omzet voor alle bestellingen"
   sales_totals: "Omzet"
@@ -482,17 +475,15 @@ nl-BE:
   shipped: Verzonden
   shipping: Aflevering
   shipping_address: "Afleveringsadres"
+  shipping_calculator: Calculator
   shipping_categories: "Shipping Categories"
   shipping_categories_description: "Manage shipping categories to identify which products can be shipped via which method"
-  shipping_category: Shipping Category
   shipping_cost: Cost
   shipping_error: "Fout met aflevering"
   shipping_instructions: "Shipping Instructions"
   shipping_method: "Verzendingsmethode"
   shipping_methods: "Shipping Methods"
   shipping_methods_description: "Manage shipping methods"
-  shipping_rates: "Shipping Rates"
-  shipping_rates_description: "Manage shipping rates"
   shipping_total: "Verzending"
   shop_by_taxonomy: "Shop by {{taxonomy}}"
   shopping_cart: "Winkelmandje"
@@ -583,7 +574,6 @@ nl-BE:
   users: Gebruikers
   value: Waarde
   variants: Varianten
-  vat: "VAT"           
   version: Versie
   website: Website
   weight: Gewicht

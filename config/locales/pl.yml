@@ -196,7 +196,6 @@ pl:
   backordering_is_allowed: "Backordering {{not}} allowed"
   bill_address: "Adres billingowy"
   billing_address: "Adres billingowy"
-  calculator: Calculator
   calculator_settings_warning: "If you are changing the calculator type, you must save first before you can edit the calculator settings"
   cancel: anuluj
   canceled: Canceled
@@ -230,12 +229,13 @@ pl:
   country: Kraj
   country_based: "Country Based"
   coupon: Coupon                                                                             
+  coupon_calculator: Coupon Calculator
   coupons: Coupons
   coupons_description: Manage coupons
   create: Utwórz
   create_a_new_account: "Utwórz nowe konto"
   create_user_account: Create User Account
-  created_successfully: "Created Successfully"
+  created_successfully:
   credit_card: "Karta kredytowa"
   credit_card_capture_complete: "Credit Card Was Captured"
   credit_card_payment: "Credit Card Payment"
@@ -259,12 +259,11 @@ pl:
   editing_prototype: "Editing Prototype"
   editing_shipping_category: "Editing Shipping Category"
   editing_shipping_method: "Editing Shipping Method"
-  editing_shipping_rate: Editing Shipping Rate 
   editing_state: "Edycja stanu"
   editing_tax_category: "Edycja kategorii podatkowej"
   editing_tax_rate: "Editing Tax Rate"
   editing_user: "Edycja użytkownika"
-  editing_zone: "Editing Zone"
+  editing_zone:
   email: Email
   email_address: "Adres email"
   email_server_settings_description: "Skonfiguruj ustawienia serwera pocztowego."
@@ -284,11 +283,7 @@ pl:
   first_name: Imię
   flat_percent: Flat Percent
   flat_rate_amount: Amount
-  flat_rate_per_item: "Flat Rate (per item)"
-  flat_rate_per_order: "Flat Rate (per order)"
-  flexible_rate: "Flexible Rate"
   forgot_password: "Forgot Password"
-  full_name: "Full Name"
   gateway: Brama
   gateway_configuration: "Gateway configuration"
   gateway_error: "Błąd bramki"
@@ -312,7 +307,7 @@ pl:
   images: Obrazki
   images_for: "Images for"
   in_progress: "W trakcie..."
-  invalid_search: "Invalid search criteria."
+  invalid_search:
   inventory: Zapasy
   inventory_adjustment: "Dostosowanie zapasów"
   inventory_setting_description: "Inventory Configuration, Backordering, Zero-Stock Display"
@@ -340,8 +335,8 @@ pl:
   login_name: Login
   logout: Wyloguj
   maestro_or_solo_cards: Maestro/Solo cards
-  mail_delivery_enabled: "Mail delivery is enabled"
-  mail_delivery_not_enabled: "Mail delivery is not enabled"
+  mail_delivery_enabled:
+  mail_delivery_not_enabled:
   mail_server_preferences: Mail Server Preferences
   mail_server_settings: "Ustawienia serwera pocztowego"
   mark_shipped: "Mark Shipped"
@@ -364,10 +359,9 @@ pl:
   new_product: "Nowy produkt"
   new_property: "Nowa właściwość"
   new_prototype: "Nowy prototyp"
-  new_shipment: "New Shipment"
+  new_shipment:
   new_shipping_category: "New Shipping Category"
   new_shipping_method: "New Shipping Method"
-  new_shipping_rate: New Shipping Rate
   new_state: "Nowy stan"
   new_tax_category: "Nowa kategoria podatkowa"
   new_tax_rate: "New Tax Rate"
@@ -458,7 +452,6 @@ pl:
   return: powrót
   returned: Returned
   roles: Roles
-  sales_tax: "Sales Tax"
   sales_total: "Sales Total"
   sales_total_for_all_orders: "Sales total for all orders"
   sales_totals: "Sales Totals"
@@ -482,17 +475,15 @@ pl:
   shipped: Shipped
   shipping: Dostawa
   shipping_address: "Adres Dostawy"
+  shipping_calculator: Calculator
   shipping_categories: "Shipping Categories"
   shipping_categories_description: "Manage shipping categories to identify which products can be shipped via which method"
-  shipping_category: Shipping Category
   shipping_cost: Cost
   shipping_error: "Shipping Error"
   shipping_instructions: "Shipping Instructions"
   shipping_method: Method
   shipping_methods: "Shipping Methods"
   shipping_methods_description: "Manage shipping methods"
-  shipping_rates: "Shipping Rates"
-  shipping_rates_description: "Manage shipping rates"
   shipping_total: "Koszt dostawy"
   shop_by_taxonomy: "Shop by {{taxonomy}}"
   shopping_cart: Koszyk
@@ -571,7 +562,7 @@ pl:
   unrecognized_card_type: Unrecognized card type
   update: Aktualizuj
   update_password: "Update my password and log me in"                    
-  updated_successfully: "Updated Successfully"
+  updated_successfully:
   updating: Updating
   usage_limit: Usage Limit
   use_as_shipping_address: Use as Shipping Address
@@ -583,7 +574,6 @@ pl:
   users: Użytkownicy
   value: Wartość
   variants: Warianty
-  vat: "VAT"           
   version: Wersja
   website: "Strona www"
   weight: Weight

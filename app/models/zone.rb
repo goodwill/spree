@@ -1,25 +1,18 @@
 class Zone < ActiveRecord::Base
   has_many :zone_members
-  has_many :tax_rates
-  
   validates_presence_of :name
   validates_uniqueness_of :name
   after_save :remove_defunct_members
   
   alias :members :zone_members
   accepts_nested_attributes_for :zone_members, :allow_destroy => true, :reject_if => proc { |a| a['zoneable_id'].blank? }
-
-  # WARNING during tets class method .global is declared to indicate global Zone to use with tests
   
   #attr_accessor :type
   def kind
-    member = self.members.last
-    case member && member.zoneable_type
-    when "State"  then "state"
-    when "Zone"   then "zone"
-    else
-      "country"
-    end
+    return "country" unless member = self.members.last
+    return "state" if member.zoneable_type == "State"
+    return "zone" if member.zoneable_type == "Zone"
+    "country"
   end   
   
   def kind=(value)
@@ -32,22 +25,19 @@ class Zone < ActiveRecord::Base
     include?(address)  
   end
       
-  def include?(address)
-    return unless address
-    
+  def include?(address)        
     # NOTE: This is complicated by the fact that include? for HMP is broken in Rails 2.1 (so we use awkward index method)
-    members.any? do |zone_member|
-      case zone_member.zoneable_type
-      when "Zone"
-        zone_member.zoneable.include?(address)
-      when "Country"
-        zone_member.zoneable == address.country
-      when "State"
-        zone_member.zoneable == address.state
-      else
-        false
-      end
+    case self.kind
+    when "country"
+      return members.select { |zone_member| zone_member.zoneable == address.country }.any?
+    when "state"
+      return members.select { |zone_member| zone_member.zoneable == address.state }.any?
+      #members.index(address.state).respond_to?(:integer?)
     end
+    members.each do |zone_member|
+      return true if zone_member.zoneable.include?(address)
+    end
+    false
   end
   
   def self.match(address)
@@ -56,7 +46,7 @@ class Zone < ActiveRecord::Base
     zones
   end
   
-  # convenience method for returning the countries contained within a zone (different then the countries method which only
+  # convenience method for returning the countries contained within a zone (different then the countries method which only 
   # returns the zones children and does not consider the grand children if the children themselves are zones)
   def country_list
     return [] if kind == "state"
@@ -66,7 +56,7 @@ class Zone < ActiveRecord::Base
   
   def <=>(other)
     name <=> other.name
-  end
+  end  
   
   private
   def remove_defunct_members

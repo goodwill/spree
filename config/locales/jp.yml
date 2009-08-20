@@ -196,7 +196,6 @@ jp:
   backordering_is_allowed: "Backordering {{not}} allowed"
   bill_address: 請求先住所
   billing_address: 請求先住所
-  calculator: Calculator
   calculator_settings_warning: "If you are changing the calculator type, you must save first before you can edit the calculator settings"
   cancel: キャンセル
   canceled: キャンセル済み
@@ -230,6 +229,7 @@ jp:
   country: 国名
   country_based: "Country Based"
   coupon: Coupon                                                                             
+  coupon_calculator: Coupon Calculator
   coupons: Coupons
   coupons_description: Manage coupons
   create: 作成
@@ -259,7 +259,6 @@ jp:
   editing_prototype: プロトタイプの編集
   editing_shipping_category: 配送カテゴリー編集
   editing_shipping_method: 配送方法編集
-  editing_shipping_rate: Editing Shipping Rate 
   editing_state: 都道府県（州）編集
   editing_tax_category: 税カテゴリー編集
   editing_tax_rate: "Editing Tax Rate"
@@ -284,11 +283,7 @@ jp:
   first_name: 名前
   flat_percent: Flat Percent
   flat_rate_amount: Amount
-  flat_rate_per_item: "Flat Rate (per item)"
-  flat_rate_per_order: "Flat Rate (per order)"
-  flexible_rate: "Flexible Rate"
   forgot_password: "Forgot Password"
-  full_name: "Full Name"
   gateway: ゲートウェー
   gateway_configuration: "Gateway configuration"
   gateway_error: ゲートウェーエラー
@@ -367,7 +362,6 @@ jp:
   new_shipment: 新規配送
   new_shipping_category: 新規配送カテゴリー
   new_shipping_method: 新規配送方法
-  new_shipping_rate: New Shipping Rate
   new_state: 新規都道府県（州）
   new_tax_category: 新規税カテゴリー
   new_tax_rate: 新規税率
@@ -458,7 +452,6 @@ jp:
   return: return
   returned: Returned
   roles: 役割
-  sales_tax: "Sales Tax"
   sales_total: 売上げ合計
   sales_total_for_all_orders: 全ての注文の売上げ合計
   sales_totals: 売上げ合計
@@ -482,17 +475,15 @@ jp:
   shipped: 発送済
   shipping: 送料
   shipping_address: 配送先
+  shipping_calculator: 計算式
   shipping_categories: 配送カテゴリー
   shipping_categories_description: "Manage shipping categories to identify which products can be shipped via which method"
-  shipping_category: Shipping Category
   shipping_cost: Cost
   shipping_error: "Shipping Error"
   shipping_instructions: "Shipping Instructions"
   shipping_method: 配送方法
   shipping_methods: 配送方法
   shipping_methods_description: 配送方法を管理します。
-  shipping_rates: "Shipping Rates"
-  shipping_rates_description: "Manage shipping rates"
   shipping_total: 配送料合計
   shop_by_taxonomy: "{{taxonomy}}"
   shopping_cart: ショッピングカート
@@ -583,7 +574,6 @@ jp:
   users: ユーザ
   value: 値
   variants: 形式
-  vat: "VAT"           
   version: バージョン
   website: ウェブサイト
   weight: 重量

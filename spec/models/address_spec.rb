@@ -43,8 +43,7 @@ describe Address do
 
   it "should require a state when the associated country have states" do
     @address.attributes = valid_address_attributes.with(
-      :country => Country.new(:states => [State.new(:name => "A State", :abbr => "ST")]),
-      :state_name => ""
+      :country => Country.new(:states => [State.new(:name => "A State", :abbr => "ST")])
     )
 
     @address.should_not be_valid

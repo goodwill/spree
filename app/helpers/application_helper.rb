@@ -17,4 +17,5 @@ module ApplicationHelper
   def flag_image(code)
     "#{code.to_s.split("-").last.downcase}.png"
   end                      
+
 end

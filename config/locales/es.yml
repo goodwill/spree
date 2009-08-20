@@ -196,7 +196,6 @@ es:
   backordering_is_allowed: "Backordering {{not}} allowed"
   bill_address: "Dirección de facturación"
   billing_address: "Dirección de facturación"
-  calculator: Calculator
   calculator_settings_warning: "If you are changing the calculator type, you must save first before you can edit the calculator settings"
   cancel: Cancelar
   canceled: Cancelado
@@ -230,6 +229,7 @@ es:
   country: País
   country_based: "Pais base"
   coupon: Coupon                                                                             
+  coupon_calculator: Coupon Calculator
   coupons: Coupons
   coupons_description: Manage coupons
   create: Crear
@@ -259,7 +259,6 @@ es:
   editing_prototype: "Editando Prototipo"
   editing_shipping_category: "Editando Categoria de envío"
   editing_shipping_method: "Editando metodo de envío"
-  editing_shipping_rate: Editing Shipping Rate 
   editing_state: "Editando provincia"
   editing_tax_category: "Editando Categoría fiscal"
   editing_tax_rate: "Editing Tax Rate"
@@ -284,11 +283,7 @@ es:
   first_name: Nombre
   flat_percent: Flat Percent
   flat_rate_amount: Amount
-  flat_rate_per_item: "Flat Rate (per item)"
-  flat_rate_per_order: "Flat Rate (per order)"
-  flexible_rate: "Flexible Rate"
   forgot_password: "¿Olvidaste tu contraseña?"
-  full_name: "Full Name"
   gateway: "pasarela"
   gateway_configuration: "Gateway configuration"
   gateway_error: "Error en la pasarela"
@@ -367,7 +362,6 @@ es:
   new_shipment: "Nuevo envio"
   new_shipping_category: "Nueva categoria de envio"
   new_shipping_method: "Nueva forma de envio"
-  new_shipping_rate: New Shipping Rate
   new_state: "Nueva provincia"
   new_tax_category: "Nueva categoría"
   new_tax_rate: "Nuevo iipo impositivo"
@@ -458,7 +452,6 @@ es:
   return: volver
   returned: regresó
   roles: Funciones
-  sales_tax: "Sales Tax"
   sales_total: "Total de ventas"
   sales_total_for_all_orders: "Total de ventas para todos los pedidos"
   sales_totals: "Ventas Totales"
@@ -482,17 +475,15 @@ es:
   shipped: Enviado
   shipping: Envío
   shipping_address: "Dirección de envío"
+  shipping_calculator: Calculadora
   shipping_categories: "Categorias de envio"
   shipping_categories_description: "Gestionar las categorias de envio para determinar qué categorías de productos pueden ser transportados a través de qué método"
-  shipping_category: Shipping Category
   shipping_cost: Costes de envio
   shipping_error: "Error de envio"
   shipping_instructions: "Shipping Instructions"
   shipping_method: Metodo de envio
   shipping_methods: "Metodos de envio"
   shipping_methods_description: "Manejar metodos de envio"
-  shipping_rates: "Shipping Rates"
-  shipping_rates_description: "Manage shipping rates"
   shipping_total: "Total de envío"
   shop_by_taxonomy: "Comprar por {{taxonomy}}"
   shopping_cart: "Cesta de compras"
@@ -583,7 +574,6 @@ es:
   users: Usuarios
   value: "valor"
   variants: Variantes
-  vat: "VAT"           
   version: Versión
   website: "Página web"
   weight: Peso

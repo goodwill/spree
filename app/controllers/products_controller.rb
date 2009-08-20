@@ -1,6 +1,4 @@
-
 class ProductsController < Spree::BaseController
-  prepend_before_filter :reject_unknown_object
   before_filter(:setup_admin_user) unless RAILS_ENV == "test"
 
   resource_controller
@@ -39,26 +37,20 @@ class ProductsController < Spree::BaseController
     base_scope = Product.active
 
     if !params[:taxon].blank? && (@taxon = Taxon.find_by_id(params[:taxon]))
-      base_scope = base_scope.taxons_id_in_tree(@taxon)
+      taxon_and_descendants = [@taxon] + @taxon.descendents
+      base_scope = base_scope.taxons_id_equals_any(taxon_and_descendants.map &:id)
     end
     
     @search = base_scope.search(nurse_search_set(params[:search]))
     
     # set on model basis (default 30)
-    # might want to add .scoped(:select => "distinct on (products.id) products.*") here
-    # in case some filter goes astray with its joins
-
-    # this can now be set on a model basis 
     # Product.per_page ||= Spree::Config[:products_per_page]
 
     ## defunct?
     @product_cols = 3 
-    
-    products_per_page=params[:per_page].to_i
-    products_per_page=Spree::Config[:products_per_page] if products_per_page==0
-    
+
     @products ||= @search.paginate(:include  => [:images, {:variants => :images}],
-                                   :per_page => products_per_page,
+                                   :per_page => Spree::Config[:products_per_page],
                                    :page     => params[:page])
   end
   
